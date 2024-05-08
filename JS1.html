@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="original_number">The Orinal Number</h1>
+    <h1 id="new_number">The New Number</h1> 
+    <script>
+        let x=32243
+        let y=x
+let result = 0;
+
+while(x>0){
+    // Getting the rightmost digit
+    rightmost = x%10;
+    
+    result = result*10 + rightmost;
+    
+    // Removing the rightmost digit from the number
+    x = Math.floor(x/10);
+}
+document.getElementById("original_number").innerHTML=("Original number is : " + y)
+document.getElementById("new_number").innerHTML=("Reversed number is : " + result)
+    </script>
+</body>
+</html>
